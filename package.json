@@ -1,0 +1,19 @@
+{
+  "name": "upconfig",
+  "version": "0.0.1",
+  "description": "supply runtime configs for bundled apps",
+  "main": "index.js",
+  "bin": "cli.js",
+  "scripts": {
+    "test": "node test/test.js",
+    "test-watch": "nodemon test/test.js ignore \"**/temp/**\""
+  },
+  "author": "jakobrosenberg@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^8.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
+}

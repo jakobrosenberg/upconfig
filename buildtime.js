@@ -33,7 +33,14 @@ const run = (source, dir) => {
         .reduce((configs, config) => ({ ...configs, ...config }))
 
     mkdirSync(dir, { recursive: true })
-    writeFileSync(destination, `export default ${JSON.stringify(sourceObjs, null, 2)}`)
+
+    writeFileSync(destination, [
+            `const upconfig = ${JSON.stringify(sourceObjs, null, 2)}`,
+            `if (typeof window != 'undefined')`,
+            `  window.__upconfig = upconfig`,
+            `export default upconfig`
+        ].join('\n')
+    )
 }
 
 module.exports = { run, requestSource }

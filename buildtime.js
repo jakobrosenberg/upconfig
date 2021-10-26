@@ -1,5 +1,4 @@
-const assert = require('assert')
-const { readFileSync, statSync, readdirSync, writeFileSync, mkdirSync } = require('fs')
+const { statSync, readdirSync, writeFileSync, mkdirSync } = require('fs')
 const { join, resolve, basename } = require('path')
 
 /**

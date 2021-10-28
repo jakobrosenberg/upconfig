@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/jakobrosenberg/upconfig/compare/v0.0.3...v0.0.4) (2021-10-28)
+
+
+### Bug Fixes
+
+* add support for node 10 ([1d0f15d](https://github.com/jakobrosenberg/upconfig/commit/1d0f15d0676fd46a79134448456e6d62896ffbe2))
+
 ### [0.0.3](https://github.com/jakobrosenberg/upconfig/compare/v0.0.2...v0.0.3) (2021-10-28)
 
 

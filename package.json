@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "supply runtime configs for bundled apps",
   "main": "index.js",
-  "bin": "cli.js",
+  "bin": "lib/cli.js",
   "scripts": {
     "test": "node test/test.js",
     "test-watch": "nodemon test/test.js ignore \"**/temp/**\""

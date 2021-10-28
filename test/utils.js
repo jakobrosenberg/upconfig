@@ -26,4 +26,17 @@ const writeIndexHtml = (path) => {
   writeFileSync(path, content)
 }
 
-module.exports = { test, writeIndexHtml }
+const writePackageJson = (path) => {
+  const json = {
+    scripts: {
+      prebuild: 'prebuildstuff',
+      build: 'buildstuff',
+      start: 'startstuff',
+    }
+  }
+
+  mkdirSync(dirname(path), { recursive: true })
+  writeFileSync(path, JSON.stringify(json, null, 2))
+}
+
+module.exports = { test, writeIndexHtml, writePackageJson }

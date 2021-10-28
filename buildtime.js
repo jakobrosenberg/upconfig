@@ -27,7 +27,7 @@ const requestSource = (rawSource) => {
 
 const run = (source, dir) => {
     const destination = join(dir, '__upconfig.js')
-    source = [source].flat(Infinity)
+    source = [].concat(...[source])
     const sourceObjs = source
         .map(requestSource)
         .reduce((configs, config) => ({ ...configs, ...config }))
@@ -35,13 +35,13 @@ const run = (source, dir) => {
     mkdirSync(dir, { recursive: true })
 
     writeFileSync(destination, [
-            `const upconfig = ${JSON.stringify(sourceObjs, null, 2)}`,
-            `if (typeof window != 'undefined')`,
-            `  window.__upconfig = upconfig`,
-            `if (typeof global != 'undefined')`,
-            `  global.__upconfig = upconfig`,
-            `export default upconfig`
-        ].join('\n')
+        `const upconfig = ${JSON.stringify(sourceObjs, null, 2)}`,
+        `if (typeof window != 'undefined')`,
+        `  window.__upconfig = upconfig`,
+        `if (typeof global != 'undefined')`,
+        `  global.__upconfig = upconfig`,
+        `export default upconfig`
+    ].join('\n')
     )
 }
 

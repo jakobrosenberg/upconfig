@@ -11,3 +11,4 @@ program
     .argument('[public-dir]', '',)
     .action(run)
 
+program.parse()

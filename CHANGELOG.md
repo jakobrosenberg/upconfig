@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/jakobrosenberg/upconfig/compare/v0.1.0...v0.1.1) (2021-10-28)
+
+
+### Features
+
+* added prepatch ([9ee7b8a](https://github.com/jakobrosenberg/upconfig/commit/9ee7b8aeb597404d2f2f622228283856b26e6123))
+
 ## [0.1.0](https://github.com/jakobrosenberg/upconfig/compare/v0.0.4...v0.1.0) (2021-10-28)
 
 

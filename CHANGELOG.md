@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.0](https://github.com/jakobrosenberg/upconfig/compare/v0.0.4...v0.1.0) (2021-10-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* patch index.html
+
+### Features
+
+* patch index.html ([a57fbd4](https://github.com/jakobrosenberg/upconfig/commit/a57fbd4c6a3919999476272df4ffc5242db057b5))
+
 ### [0.0.4](https://github.com/jakobrosenberg/upconfig/compare/v0.0.3...v0.0.4) (2021-10-28)
 
 

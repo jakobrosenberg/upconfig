@@ -38,6 +38,8 @@ const run = (source, dir) => {
             `const upconfig = ${JSON.stringify(sourceObjs, null, 2)}`,
             `if (typeof window != 'undefined')`,
             `  window.__upconfig = upconfig`,
+            `if (typeof global != 'undefined')`,
+            `  global.__upconfig = upconfig`,
             `export default upconfig`
         ].join('\n')
     )

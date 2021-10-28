@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/jakobrosenberg/upconfig/compare/v0.0.2...v0.0.3) (2021-10-28)
+
+
+### Bug Fixes
+
+* cli was broke ([6cf2781](https://github.com/jakobrosenberg/upconfig/commit/6cf27814aa46a8c98f162ba7bb662b656f69d6ae))
+
 ### [0.0.2](https://github.com/jakobrosenberg/upconfig/compare/v0.0.1...v0.0.2) (2021-10-28)
 
 

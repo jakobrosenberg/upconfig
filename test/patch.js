@@ -31,7 +31,7 @@ test('can name source', () => {
 
 test('can process source from env variable', () => {
     process.env.UPCONFIG_TEST = configA
-    const config = requestSource('$UPCONFIG_TEST')
+    const config = requestSource('UPCONFIG_TEST')
     assert.deepEqual(config, expectA)
 })
 

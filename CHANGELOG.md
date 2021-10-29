@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/jakobrosenberg/upconfig/compare/v0.1.3...v0.2.0) (2021-10-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* renamed prepatch install
+
+### Bug Fixes
+
+* better source handling ([9bbb337](https://github.com/jakobrosenberg/upconfig/commit/9bbb337f64f558f5af8b62e5fe93fa3fd46be169))
+
+
+* renamed prepatch install ([f6953a3](https://github.com/jakobrosenberg/upconfig/commit/f6953a3bbddc803cc10920357ffd319fb57f516c))
+
 ### [0.1.3](https://github.com/jakobrosenberg/upconfig/compare/v0.1.1...v0.1.3) (2021-10-28)
 
 

@@ -1,6 +1,6 @@
 {
   "name": "upconfig",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "supply runtime configs for bundled apps",
   "main": "index.js",
   "bin": "lib/cli.js",

@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/jakobrosenberg/upconfig/compare/v0.2.3...v0.3.0) (2021-10-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* autoresolve merges configs
+
+### Features
+
+* autoresolve merges configs ([d2ad04b](https://github.com/jakobrosenberg/upconfig/commit/d2ad04b3ed5dfb5bbe8ded07404ce9ac099ba3d4))
+
+
+### Bug Fixes
+
+* patch wasn't set to module ([a3cd04b](https://github.com/jakobrosenberg/upconfig/commit/a3cd04b0114e34544bf98aecfb239b5e49595b58))
+
 ### [0.2.3](https://github.com/jakobrosenberg/upconfig/compare/v0.2.2...v0.2.3) (2021-10-29)
 
 

@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/jakobrosenberg/upconfig/compare/v0.2.0...v0.2.1) (2021-10-29)
+
+
+### Bug Fixes
+
+* missing help for install command ([b965abe](https://github.com/jakobrosenberg/upconfig/commit/b965abee2b93e96214ca49b7b1ecd5ab3ec813fa))
+
 ## [0.2.0](https://github.com/jakobrosenberg/upconfig/compare/v0.1.3...v0.2.0) (2021-10-29)
 
 

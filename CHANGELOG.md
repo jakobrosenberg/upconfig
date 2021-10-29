@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/jakobrosenberg/upconfig/compare/v0.2.1...v0.2.2) (2021-10-29)
+
+
+### Bug Fixes
+
+* bad main in package.json ([380a015](https://github.com/jakobrosenberg/upconfig/commit/380a015b6fb0ff63910986b478fa25521276d702))
+
 ### [0.2.1](https://github.com/jakobrosenberg/upconfig/compare/v0.2.0...v0.2.1) (2021-10-29)
 
 

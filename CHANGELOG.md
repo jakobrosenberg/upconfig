@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.1](https://github.com/jakobrosenberg/upconfig/compare/v0.3.0...v0.3.1) (2021-10-29)
+
+
+### Features
+
+* added inline option ([2c7bb2e](https://github.com/jakobrosenberg/upconfig/commit/2c7bb2e58bbd1ad45b147e89cf293fc57a991547))
+
 ## [0.3.0](https://github.com/jakobrosenberg/upconfig/compare/v0.2.3...v0.3.0) (2021-10-29)
 
 

@@ -18,6 +18,15 @@ const expect = {
     }
 }
 
+const expectInline = {
+    scripts: {
+        prebuild: 'prebuildstuff && upconfig config.js,$MY_CONFIG test/temp/index.html -i',
+        build: 'buildstuff',
+        start: 'startstuff',
+        prestart: 'upconfig config.js,$MY_CONFIG test/temp/index.html -i'
+    }
+}
+
 test('can install', () => {    
     install(['start', 'build'], ['config.js', '\$MY_CONFIG'], indexHtml, { packageJson })
     const pkgjson = JSON.parse(readFileSync(packageJson, 'utf-8'))
@@ -32,4 +41,13 @@ test('install doesnt duplicate itself', () => {
     const pkgjson = JSON.parse(readFileSync(packageJson, 'utf-8'))
 
     assert.deepEqual(pkgjson, expect)
+})
+
+
+test('can install inline', () => {    
+    install(['start', 'build'], ['config.js', '\$MY_CONFIG'], indexHtml, { packageJson, inline: true })
+    const pkgjson = JSON.parse(readFileSync(packageJson, 'utf-8'))
+
+    
+    assert.deepEqual(pkgjson, expectInline)
 })

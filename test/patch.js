@@ -10,7 +10,19 @@ const dir = __dirname + '/temp'
 const indexHtml = __dirname + '/temp/index.html'
 const expectA = { 'config-a.js': { hello: "I'm a", envValue: 'foobar' } }
 const expectB = { 'config-b.js': { hello: "I'm b" } }
-const expectHtml = '<!DOCTYPE html><html><head><script src="/__upconfig.js"></script>\n' +
+const expectHtml = '<!DOCTYPE html><html><head><script id="__upconfig" src="/__upconfig.js" type="module"></script>\n' +
+    '    <title>This is the title of the webpage!</title>\n' +
+    '  </head>\n' +
+    '  <body>\n' +
+    '    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>\n' +
+    '  \n' +
+    '</body></html>'
+
+const expectedHtmlInlined = `<!DOCTYPE html><html><head><script id="__upconfig">const upconfig = {"config-a.js":{"hello":"I'm a","envValue":"foobar"}};` +
+    "if (typeof window != 'undefined');" +
+    '  window.__upconfig = upconfig;' +
+    "if (typeof global != 'undefined');" +
+    '  global.__upconfig = upconfig</script>\n' +
     '    <title>This is the title of the webpage!</title>\n' +
     '  </head>\n' +
     '  <body>\n' +
@@ -73,4 +85,10 @@ test('ignores patched index.html', () => {
     patch(configA, indexHtml)
     const content = readFileSync(indexHtml, 'utf-8')
     assert.equal(content, expectHtml)
+})
+
+test('can inline config index.html', () => {
+    patch(configA, indexHtml, { inline: true })
+    const content = readFileSync(indexHtml, 'utf-8')
+    assert.equal(content, expectedHtmlInlined)
 })

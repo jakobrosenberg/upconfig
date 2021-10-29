@@ -1,2 +1,2 @@
 require('./patch')
-require('./prepatch')
+require('./install')

@@ -2,7 +2,7 @@ const assert = require('assert');
 const { readFileSync } = require('fs');
 const { relative } = require('path');
 const { test, writePackageJson } = require("./utils");
-const { prepatch } = require('../lib/prepatch')
+const { install } = require('../lib/install')
 
 const dir = relative(process.cwd(), __dirname + '/temp').replace(/\\/mg, '/')
 const packageJson = dir + '/package.json'
@@ -18,17 +18,17 @@ const expect = {
     }
 }
 
-test('can prepatch', () => {    
-    prepatch(['start', 'build'], ['config.js', '\$MY_CONFIG'], indexHtml, { packageJson })
+test('can install', () => {    
+    install(['start', 'build'], ['config.js', '\$MY_CONFIG'], indexHtml, { packageJson })
     const pkgjson = JSON.parse(readFileSync(packageJson, 'utf-8'))
 
     assert.deepEqual(pkgjson, expect)
 })
 
-test('prepatch doesnt duplicate itself', () => {    
-    prepatch(['start', 'build'], ['config.js', '\$MY_CONFIG'], indexHtml, { packageJson })
-    prepatch(['start', 'build'], ['config.js', '\$MY_CONFIG'], indexHtml, { packageJson })
-    prepatch(['start', 'build'], ['config.js', '\$MY_CONFIG'], indexHtml, { packageJson })
+test('install doesnt duplicate itself', () => {    
+    install(['start', 'build'], ['config.js', '\$MY_CONFIG'], indexHtml, { packageJson })
+    install(['start', 'build'], ['config.js', '\$MY_CONFIG'], indexHtml, { packageJson })
+    install(['start', 'build'], ['config.js', '\$MY_CONFIG'], indexHtml, { packageJson })
     const pkgjson = JSON.parse(readFileSync(packageJson, 'utf-8'))
 
     assert.deepEqual(pkgjson, expect)

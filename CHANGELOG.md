@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.3.2](https://github.com/jakobrosenberg/upconfig/compare/v0.3.1...v0.3.2) (2021-11-01)
+
+
+### Bug Fixes
+
+* **warning:** got rid of syntax warning ([f39efba](https://github.com/jakobrosenberg/upconfig/commit/f39efbac201597312ed828ffd4215bf5914a2d3a))
+
 ### [0.3.1](https://github.com/jakobrosenberg/upconfig/compare/v0.3.0...v0.3.1) (2021-10-29)
 
 

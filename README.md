@@ -3,10 +3,10 @@
 ### Small tool for supplying prebuilt web applications with runtime configs
 
 ## The problem
-Since prebuilt web apps traditionally are served directly to the client browser,
+Since prebuilt web apps traditionally are sent directly to the client browser,
 there's no way to provide custom configurations at runtime.
 
-Up config patches the index.html and injects your config or javascript at runtime
+Upconfig patches the index.html and injects your config or javascript at runtime
 
 ### Usage
 
